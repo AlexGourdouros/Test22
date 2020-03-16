@@ -1,0 +1,62 @@
+﻿@model Test22.Models.InvoiceItem
+
+@{
+    ViewBag.Title = "Details";
+	if (HttpContext.Current.Session["usedID"] == null)
+	{ Response.Redirect("~/Login/Index", false); }
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>InvoiceItem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExtendedCost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExtendedCost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Invoice.InvoiceID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Invoice.InvoiceID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Item.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Item.Name)
+        </dd>
+
+       
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.InvoiceItemID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

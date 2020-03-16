@@ -1,0 +1,49 @@
+﻿
+@{
+	ViewBag.Title = "Index";
+
+}
+
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<div class="jumbotron text-center">
+	<h1>Count Your Eggs</h1>
+	<p>Inventory Managment System</p>
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+	<div class="w3-container">
+		<button onclick="document.getElementById('id01').style.display='block'" class="btn btn-danger">Create Account</button>
+		<div id="id01" class="w3-modal">
+			<div class="w3-modal-content">
+				<div class="w3-container">
+					<span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+					<div class="w3-container">
+
+						@Html.Partial("_C", new Test22.Models.User())
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+

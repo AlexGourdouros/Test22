@@ -1,0 +1,86 @@
+﻿@model Test22.Models.Invoice
+
+@{
+    ViewBag.Title = "Details";
+	if (HttpContext.Current.Session["usedID"] == null)
+	{ Response.Redirect("~/Login/Index", false); }
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Invoice</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.InvoiceCreated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InvoiceCreated)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AmountPaid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AmountPaid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AmountDue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AmountDue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Total)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Total)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaymentStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaymentStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemsReceived)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemsReceived)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Distributer.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Distributer.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Payment.PaymentType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Payment.PaymentType)
+        </dd>
+
+      
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.InvoiceID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,26 @@
+﻿@{
+
+	if (HttpContext.Current.Session["usedID"] == null)
+	{ Response.Redirect("~/Login/Index"); }
+}
+
+<h2>Dashboard</h2>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dashboard</title>
+</head>
+<body>
+
+
+
+
+	<img src="@Url.Action("BubbleBreak")" alt="chart"/>
+
+	<h3>Username: @Session["userName"]</h3>
+	<a href="@Url.Action("LogOut","Login")">LogOut</a>
+</body>
+</html>

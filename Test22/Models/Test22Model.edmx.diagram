@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f025827a4e1b41d8967324726ff72f60" Name="Diagram1">
+        <EntityTypeShape EntityType="Test22Model.Category" Width="1.5" PointX="3" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Test22Model.Distributer" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Test22Model.Invoice" Width="1.5" PointX="5.25" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Test22Model.InvoiceItem" Width="1.5" PointX="7.5" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Test22Model.Item" Width="1.5" PointX="5.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Test22Model.Payment" Width="1.5" PointX="3" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Test22Model.Receipt" Width="1.5" PointX="9.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Test22Model.Spoilage" Width="1.5" PointX="7.5" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Test22Model.UsedItem" Width="1.5" PointX="10.5" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Test22Model.User" Width="1.5" PointX="0.75" PointY="8.625" IsExpanded="true" />
+        <AssociationConnector Association="Test22Model.FK_548" ManuallyRouted="false" />
+        <AssociationConnector Association="Test22Model.FK_563" ManuallyRouted="false" />
+        <AssociationConnector Association="Test22Model.FK_531" ManuallyRouted="false" />
+        <AssociationConnector Association="Test22Model.FK_566" ManuallyRouted="false" />
+        <AssociationConnector Association="Test22Model.FK_490" ManuallyRouted="false" />
+        <AssociationConnector Association="Test22Model.FK_545" ManuallyRouted="false" />
+        <AssociationConnector Association="Test22Model.FK_569" ManuallyRouted="false" />
+        <AssociationConnector Association="Test22Model.FK_425" ManuallyRouted="false" />
+        <AssociationConnector Association="Test22Model.FK_517" ManuallyRouted="false" />
+        <AssociationConnector Association="Test22Model.FK_581" ManuallyRouted="false" />
+        <AssociationConnector Association="Test22Model.FK_445" ManuallyRouted="false" />
+        <AssociationConnector Association="Test22Model.FK_522" ManuallyRouted="false" />
+        <AssociationConnector Association="Test22Model.FK_584" ManuallyRouted="false" />
+        <AssociationConnector Association="Test22Model.FK_572" ManuallyRouted="false" />
+        <AssociationConnector Association="Test22Model.FK_575" ManuallyRouted="false" />
+        <AssociationConnector Association="Test22Model.FK_578" ManuallyRouted="false" />
+        <AssociationConnector Association="Test22Model.FK_587" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
